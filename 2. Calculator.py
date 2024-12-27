@@ -13,8 +13,11 @@ def get_input(prompt):
             print("Invalid Input! Please enter a numeric value.")
 
 def calculator():
+
+    # The calculator program
+
     print("Welcome to the calculator program!")
-    print("\nAvaiable operations: +, -, *, /")
+    print("\nAvailable operations: +, -, *, /")
 
     # get the operation from the user
     operation = input("\nEnter the operation you want to perform (+, -, *, /): ")
@@ -24,7 +27,7 @@ def calculator():
         print("Invalid Input! Please enter a valid operation: +, -, *, /")
         return
 
-    # recieving numerical inputs from the user
+    # receiving numerical inputs from the user
     num1 = get_input("Enter the 1st operand: ")
     num2 = get_input("Enter the 2nd operand: ")
 
@@ -43,6 +46,7 @@ def calculator():
         if num2 == 0:
             print("Division by zero is not possible. Try again next time.")
         else:
+            result = num1 / num2
             print(f"The quotient of {num1} and {num2} is {result}.")
 
     print("\nThank you for using the calculator program!")
