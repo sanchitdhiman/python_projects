@@ -1,7 +1,7 @@
 # This is an age calculator program.
 # It takes user input for the birthdate of the user and calculates their age.
 
-from datetime import datetime
+from datetime import datetime    # using the datetime module
 
 def get_input():
     # This function inputs the user's date of birth and returns it as a datetime object
